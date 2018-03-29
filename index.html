@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="srb">
+
+<head>
+<title>TWIN</title>
+<link rel="stylesheet" href="style.css" href="portfolio.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Carousel: http://kenwheeler.github.io/slick/ -->
+<script type="text/javascript" src="slick/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+</head>
+
+<body>
+  <header>
+          <div id="twinlogo">
+            <a href="index.html" style="float:left;"><img src="images/twin-logo2.png" height="50"></img></a>
+          </div>
+          <nav class="site-nav">
+		    <div class="menu-toggle">
+			  <div class="hamburger"></div>
+		    </div>
+            <ul class="open desktop">
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            <li id="hire"><a href="mailto:ana.baranjin@gmail.com"><b>HIRE ME</b></a></li>
+            </ul>
+          </nav>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.menu-toggle').click(function() {
+
+		    $('ul').toggleClass('opening');
+		    $(this).toggleClass('open');
+
+		  })
+		  });
+		</script>
+
+</header>
+
+
+<section id="welcome-page">
+<div class="container">
+<h1>I am TWIN.</h1>
+<h3 id="welcome-desktop">Or Ana, depends who you ask!<br>
+I am also a designer, and can do many of your tasks!<br>
+In need of illustration? Or something else, too?<br>
+I will get you squared away, because that is what I do!<br>
+</h3>
+<h3 id="welcome-mobile">Or Ana, depends who you ask!<br>
+I am also a designer, <br>
+and can do <br>
+many of your tasks!<br>
+In need of illustration? <br>
+Or something else, too?<br>
+I will get you squared away, <br>
+because that is what I do!<br>
+</h3>
+</div>
+<p id="colorstrip">For more work check out <a href="https://dribbble.com/Twin"target="_blank">dribbble</a> or <a href="https://www.behance.net/Ana_Twin"target="_blank">Behance</a>
+</section>
+
+<section id="diving">
+<h2>Diving <span>in depth of these programs</span></h2>
+<div class="container">
+<img class="fishes"style="height: 600;"src="images/diving6.png" />
+<img class="fishes-mobile"style="height: 600;"src="images/mobile/fish-mobile.png" />
+<img class="fishes-tablet"style="height: 600;"src="images/tablet/fish-tablet.png" />
+<img class="bubbles"style="height: 600;"src="images/bubbles.png" />
+<img class="bubbles-mobile"style="height: 600;"src="images/mobile/bubbles-mobile.png" />
+<img class="bubbles-tablet"style="height: 600;"src="images/tablet/bubbles-tablet.png" />
+</div>
+</section>
+
+<section id="climbing">
+  <div class="mobile-background">
+	<div class="container">
+	<h2>Climbing <span>these mountain tops</span></h2>
+
+	  </style>
+	  <p id="quotes">"Ana is a greatest designer ever!"<br>
+		-Ana's Mom.</p>
+	  <script type="text/javascript" id="quotes">
+	  var quote=new Array();
+		quote[0]='"Ana took the time to figure me and my brand out and delivered better than I could have imagined! Will absolutely be working with her on new projects and wouldn\'t hesitate to recommend her to anyone! Really great designer with great communication." -Queens of Kush';    /* add as many quotes as you like!*/
+		quote[1]='"Ana\'s designs were clear, elegant and eye-catching from the first design she provided. Every feedback was perfectly taken care of, and she also had her own oppinions which she shared." -YelloSpace';
+		quote[2]='"Ana\'s educational background in art and business makes her a one of a kind graphic designer who not only makes great designs, but at the same time has a customer in mind. I had a pretty demanding business logo design for Ana and she delivered an excellent work." -Mind Central';
+		quote[3]='Working with Ana is such a fun process! I\'ve worked with her on multiple projects and just by giving her a few ideas about what I wanted, she was able to create the perfect design." -Grass Powered Poultry and Meats';
+
+
+	  var speed=9000;    /*this is the time in milliseconds adjust to suit*/
+	  var q=0;
+	  function showQuote() {
+
+		   document.getElementById("quotes").innerHTML=quote[q];
+		   q++;
+	  if(q==quote.length) {
+		   q=0;
+		}
+	  }
+	  setInterval('showQuote()',speed);
+	  </script>
+
+	</div>
+  </div>
+</section>
+
+
+<section id="skiing">
+<div class="container">
+<h2>Skiing <span>down these slopes</span></h2>
+
+<div id="slider">
+<figure class="slider-container">
+<div><img src="images/gallery-home/1.jpg"></div>
+<div><img src="images/gallery-home/2.jpg"></div>
+<div><img src="images/gallery-home/3.jpg"></div>
+<div><img src="images/gallery-home/4.jpg"></div>
+<div><img src="images/gallery-home/6.jpg"></div>
+</figure>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider-container').slick({
+    autoplay: true,
+	accessibility: true,
+	arrows: false,
+	dots: false,
+	infinite: true,
+	mobileFirst: true,
+	swipe: true,
+	autoplaySpeed: 2500,
+	fade: true,
+	speed: 500
+  });
+});
+</script>
+
+</div>
+</section>
+
+<section id="cycle">
+<div class="container">
+<h2>CYCLING <span>THROUGH MY WAY OF WORKING</span></h2>
+</div>
+
+<section class="work-process">
+<div>
+    <img src="images/cycle1.png"><h4>INQUIRE</h4>
+    <p>Send all the info, ask questions and work out a proposal</p>
+</div>
+
+<div>
+  <img src="images/cycle2.png"><h4>DESIGN</h4>
+  <p>Think, research, brainstorm & design</p>
+</div>
+
+<div>
+  <img src="images/cycle3.png"><h4>PROOF</h4>
+  <p>Recieve a proof and talk about next phase</p>
+</div>
+
+<div>
+  <img src="images/cycle4.png"><h4>CHANGES</h4>
+  <p>Make changes if needed to make sure it is just perfect</p></div>
+
+<div>
+  <img src="images/cycle5.png"><h4>FINISH UP</h4>
+  <p>Recieve all the files you will need to go forward</p></div>
+
+</section>
+
+
+<section class="work-process-mobile">
+<div>
+    <img src="images/mobile/cycle1-mobile.png"><h4>INQUIRE</h4>
+    <p>Send all the info, ask questions and work out a proposal</p>
+</div>
+
+<div>
+  <img src="images/mobile/cycle2-mobile.png"><h4>DESIGN</h4>
+  <p>Think, research, brainstorm & design</p>
+</div>
+
+<div>
+  <img src="images/mobile/cycle3-mobile.png"><h4>PROOF</h4>
+  <p>Recieve a proof and talk about next phase</p>
+</div>
+
+<div>
+  <img src="images/mobile/cycle4-mobile.png"><h4>CHANGES</h4>
+  <p>Make changes if needed to make sure it is just perfect</p></div>
+
+<div>
+  <img src="images/mobile/cycle5-mobile.png"><h4>FINISH UP</h4>
+  <p>Recieve all the files you will need to go forward</p></div>
+
+</section>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.work-process-mobile').slick({
+    autoplay: false,
+	accessibility: true,
+	arrows: true,
+	dots: true,
+	appendDots: "#cycle",
+	infinite: false,
+	mobileFirst: true,
+	swipe: true,
+	prevArrow: '<span class="prev"><img src="images/mobile/arrow-l-mobile.png"></span>',
+	nextArrow: '<span class="next"><img src="images/mobile/arrow-r-mobile.png"></span>',
+  });
+});
+</script>
+
+</section>
+
+<section id="bike">
+<div class="container">
+  <a href="https://en.wikipedia.org/wiki/Belgrade" target="_blank"><img id="belgrade" class="belgrade"src="images/belgrade.png" /></a>
+  <a href="contact.html"class="mail"><img src="images/mail2.png"style="width: 162px;" /></a>
+</div>
+</section>
+
+<!--<div class="container">
+<h2>Jos nesto pametno</h2>
+</div> ---->
+
+<footer>
+&copy;2017 Ana Baranjin. All rights reserved.
+</footer>
+
+</body>
+</html>
