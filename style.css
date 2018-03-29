@@ -523,7 +523,7 @@ footer{
 }
 
 .portfolio .container{
- padding-top: 50px; padding-bottom: 15px;
+ padding-top: 30px; padding-bottom: 0px;
 }
 
 .portfolio img{
@@ -996,6 +996,9 @@ h6{
 	.portfolio{
 		height: auto;
 	}
+  .portfolio .container{
+    padding-top: 20px;
+  }
 	.portfolio img{
 		max-width: 100%;
 	}
@@ -1012,6 +1015,7 @@ h6{
   h6{
     padding-top: 14%;
     padding-bottom: 1%;
+    margin-top: 8%;
   }
 
 	/* MOBILE Contact Page Adjustments */
