@@ -410,7 +410,7 @@ div#slider figure {
 #belgrade{
   width: 24%;
   float: right;
-  padding-top: 90px;
+  padding-top: 70px;
   margin-bottom: 420px;
 }
 .belgrade{
@@ -483,6 +483,7 @@ footer{
   text-align: center;
   background-color: #7FB942;
   font-family: helvetica;
+  font-weight: lighter;
 }
 
 .contact-info{
@@ -674,10 +675,12 @@ h6{
 		padding-top: 10px;
 		padding-bottom: 0;
 	}
-
+  #twinlogo{
+    position: relative !important;
+  }
 	/* Mobile Nav Styling */
 	.opening{
-		margin-top: 60px;
+		margin-top: 49px;
 		position: absolute;
 		z-index: 22222;
 		display: block;
@@ -696,8 +699,12 @@ h6{
 	.open li a{
 		font-size: 22px;
 		font-weight: bold;
+    font-family: Helvetica;
+    font-weight: 400;
 	}
-
+  .menu-toggle{
+    margin-top: 7px;
+  }
 
 	/* MOBILE Welcome Section */
 	/* Swapping out the mobile background image and settings it so it will size with the screen*/
@@ -710,7 +717,9 @@ h6{
 		position: relative;
 	}
 	#welcome-page h1{
-		margin-top: 50px;
+		margin-top: 30px;
+    line-height: normal;
+    padding-bottom: 10%;
 	}
 	/*Adjusting the text to take up the left side of the screen*/
 	#welcome-page h3{
@@ -718,7 +727,7 @@ h6{
 		margin: 0;
 		padding: 0;
 		text-align: left;
-		line-height: 1.5;
+		line-height: 1.9;
 		font-size: 1em;
 		color: #B98F2E;
 	}
@@ -742,7 +751,7 @@ h6{
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 900px;
+		height: 800px;
 	}
 	/* Increasing font size for the word "Diving"*/
 	#diving h2{
@@ -751,6 +760,7 @@ h6{
 		padding-bottom: 30px;
 		height: auto;
 		color: #04665B;
+    margin: 0;
 	}
 	/* Sizing the following words to be have the size of the whole h2 */
 	#diving h2 span{
@@ -760,7 +770,7 @@ h6{
 	}
 	#diving .container{
 		width: 100%;
-		height: 100%;
+
 	}
 	/*Hiding the main fish image and displaying the mobile image*/
 	#diving .fishes-mobile{
@@ -800,13 +810,13 @@ h6{
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 800px;
+		height: 700px;
 	}
 	#climbing h2{
 		font-size: 3.5em;
 		line-height: 1;
 		padding-bottom: 0;
-		padding-top: 50px;
+		padding-top: 0;
 		margin-top: 0;
 		color: #00616B;
 	}
@@ -831,13 +841,15 @@ h6{
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 800px;
+		height: 700px;
 	}
 	#skiing h2{
 		font-size: 3.5em;
 		line-height: 1;
-		padding-bottom: 50px;
+		padding-bottom: 0;
 		color: #BAD4D8;
+    margin-top: 0;
+    padding-top: 3%;
 	}
 	#skiing h2 span{
 		font-size: .5em;
@@ -863,7 +875,7 @@ h6{
 	#cycle h2{
 		font-size: 3.6em;
 		line-height: 1;
-		padding-bottom: 100px;
+		padding-bottom: 0;
 		color: #28292F;
 	}
 	#cycle h2 span{
@@ -886,7 +898,6 @@ h6{
 		width: 90%;
 		margin: 0 auto;
 	}
-
 	/* MOBILE Font size adjustments for the slider */
 	.work-process-mobile h4,
 	.work-process-mobile p{
@@ -895,7 +906,7 @@ h6{
 	}
 	.work-process-mobile h4{
 		font-size: 2.5em;
-		margin: 25px 0 5px 0;
+		margin: 45px 0 5px 0;
 		font-weight: 600;
 	}
 	.work-process-mobile p{
@@ -998,6 +1009,7 @@ h6{
 	}
   .portfolio .container{
     padding-top: 20px;
+    width: 96%;
   }
 	.portfolio img{
 		max-width: 100%;
@@ -1010,14 +1022,27 @@ h6{
     float: left;
     width: 90%;
     font-size: 95%;
-    padding-top: 8%;
+    padding-top: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   h6{
-    padding-top: 14%;
+    padding-top: 12%;
     padding-bottom: 1%;
-    margin-top: 8%;
+    margin-top: 4%;
   }
-
+  .portfolio-page-description h2{
+    padding-top: 4px;
+  }
+  .portfolio-page-image-list img{
+    padding-bottom: 4%;
+  }
+  .portfolio-end p{
+    padding-top: 40px;
+  }
+  .portfolio-end {
+    height: 160px;
+  }
 	/* MOBILE Contact Page Adjustments */
 
 /* MOBILE About Page Adjustments */
@@ -1027,7 +1052,7 @@ h6{
 .about-imgs{
   display: none;}
 
-
+}
 @media only screen and (min-device-width: 416px) and (max-device-width: 465px) {
 
 	#bike{
@@ -1073,9 +1098,10 @@ h6{
 		margin-bottom: 89px;
 	}
 	#welcome-page h1{
-		margin-top: 50px;
+		margin-top: 20px;
 		font-size: 7.6em;
-		line-height: 1;
+		line-height: 1.2;
+    padding-bottom: 1%;
 	}
 	/* TABLET Adjusting the text to take up the left side of the screen*/
 	#welcome-page h3{
@@ -1164,7 +1190,7 @@ h6{
 	}
 	/* Making the quotes smaller and full width */
 	#climbing #quotes{
-		padding-top: 0;
+		padding-top: 3%;
 		width: 100%;
 		font-size: 1.3em;
 	}
@@ -1179,6 +1205,7 @@ h6{
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 830px;
+    padding-top: 0;
 	}
 	#skiing h2{
 		font-size: 2em;
@@ -1199,7 +1226,7 @@ h6{
 	}
 	#cycle h2{
 		font-size: 1.8em;
-		color: #e0ab25;
+		color: #C2982E;
 	}
 	/* Hiding the desktop cycle and displaying the tablet one */
 	#cycle .work-process{
@@ -1221,7 +1248,7 @@ h6{
 	.work-process-mobile h4,
 	.work-process-tablet p{
 		text-align: center;
-		color: #fff;
+		color: #C2982E;
 	}
 	.work-process-mobile h4{
 		font-size: 2.5em;
@@ -1231,7 +1258,8 @@ h6{
 	.work-process-mobile p{
 		font-size: 1.3em;
 		margin: 0 0 25px 0;
-		color: #fff;
+		color: #C2982E;
+    line-height: normal;
 	}
 
 	/*  TABLET Styling the next and previous arrows */
@@ -1281,7 +1309,9 @@ h6{
 		position: relative;
 	}
 	#belgrade{
-
+      margin-bottom: 360px;
+      width: 35%;
+      padding-top: 16px;
 	}
 	.mail{
 		display:none;
@@ -1293,22 +1323,35 @@ h6{
 	.portfolio img{
 		max-width: 100%;
 	}
+  .portfolio-page-description div{
+    padding-left: 6%;
+  }
   .portfolio-page-description-tablet p{
     float: left;
-    width: 100%;
+    width: 92%;
     padding-left: 0;
     font-size: 95%;
+    padding-right: 0;
+    margin: 0;
   }
   h6{
-  padding-top: 8%;
-  margin-left: -190;
+  padding-top: 5%;
+  margin-bottom: 2%;
   }
 	/*  TABLET Contact Page Adjustments */
   /*  TABLET About Page Adjustments */
   #about-intro{
     padding: 10px 10px 50px 10px;
     margin-top: -5px;}
+  #about p{
+    padding-left: 4%;
+    padding-right:4%;
+  }
+  .about-imgs{
+    display: none;
+  }
 }
+
 
 @media only screen and (min-device-width: 850px) and (max-device-width: 1024px) {
 	#bike{
