@@ -81,7 +81,12 @@ header a:active {
   color: #70c8b7;
   transition: 0.5s;
 }
-
+.active-nav a{
+  color:  #70c8b7;
+}
+.active-nav a:hover{
+  color:  #f8c72c;
+}
 /* Mobile nav groundwork*/
 
 	nav ul {
@@ -307,7 +312,7 @@ padding-bottom: 4px;
   background: -webkit-linear-gradient(top, #007f76 0%,#4768b1 100%);
   background: linear-gradient(to bottom, #007f76 0%,#4768b1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f76', endColorstr='#4768b1',GradientType=0 ); /* IE6-9 */
-  background: url('images/mountains5.png');
+  background: url('images/climbing.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -459,7 +464,7 @@ div#slider figure {
           background-image: url(images/contact.png);
 }
 .mail{
-margin-top: 790px;
+margin-top: 700px;
 margin-right: 60px;
 float: right;
 animation: mymove 5s infinite;
@@ -585,7 +590,7 @@ h6{
   display: block;
   margin: 0 auto;
 }
-.end-portfolio{
+.end-portfolio-other-pages{
   color: #9b9b9b;
   font-size: 95%;
   width: 50%;
@@ -596,12 +601,12 @@ h6{
   padding-top: 2%;
   margin:auto;
 }
-.end-portfolio a{
+.end-portfolio-other-pages a{
   color: #404048;
   padding-right: 18px;
   padding-left: 18px;
 }
-.end-portfolio a:hover{
+.end-portfolio-other-pages a:hover{
   color: #70c8b7;
   transition: 0.5s
 }
@@ -667,6 +672,58 @@ h6{
 #contact-email a{
     color: #B7DEE2;
 }
+
+/* 404 pg DESKTOP */
+#bad-page{
+background: #ef4f23;
+height: 100%;
+}
+#bad-page h1{
+font-size: 390%;
+padding-top: 14%;
+padding-left: 10%;
+float: left;
+margin: 0;
+color: white;
+line-height: normal;
+}
+#bad-page p{
+font-size: 100%;
+padding-top: 28%;
+font-size: 160%;
+text-align: left;
+padding-left: 10%;
+margin: 0;
+color: #932c1a;
+}
+#bad-page a{
+  color: white;
+}
+#bad-page a:hover{
+  color: black;
+}
+#bad-page img{
+  height: 60%;
+  float: right;
+  margin-top: -146px;
+  padding-top: 0;
+  padding-right: 8%;
+}
+#fail-page-nav a{
+  float: left;
+  display: inline;
+  text-decoration: none;
+  padding-top: 0;
+  padding-right: 4%;
+  color: #932c1a;
+}
+#fail-page-nav p{
+  padding-top: 15%;
+  margin-top: 0;
+  font-size: 103%;
+}
+
+
 
 /* =====================================MOBILE==================================*/
 @media only screen and (max-device-width: 550px){
@@ -1043,6 +1100,13 @@ h6{
   .portfolio-end {
     height: 160px;
   }
+  .folio-overlay:hover {
+      opacity: 0.5;
+      transition: 1s;
+      -webkit-transition: 1s; /* Safari */
+      transition-timing-function: ease-out;
+      filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
 	/* MOBILE Contact Page Adjustments */
 
 /* MOBILE About Page Adjustments */
@@ -1135,7 +1199,7 @@ h6{
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 640px;
+		height: 670px;
 		margin-bottom: -1px;
 	}
 	#diving h2{
@@ -1187,6 +1251,7 @@ h6{
 	}
 	#climbing h2{
 		font-size: 2em;
+    padding-top: 3%;
 	}
 	/* Making the quotes smaller and full width */
 	#climbing #quotes{
