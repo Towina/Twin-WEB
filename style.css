@@ -219,7 +219,7 @@ header a:active {
 #welcome-page{
   text-align: center;
   background-color: #f9c82c;
-  background: url('images/welcome2.png');
+  background: url('images/welcome.png');
   /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
@@ -643,16 +643,15 @@ h6{
   background-color: #E2E2E2;
 }
 
-#about-1{
-  padding: 60px 0 0 0;
-}
 #about-intro {
     background-color: white;
       text-align: center;
+      z-index: 10;
 }
 #about-intro{
   padding: 45px 100px 50px 100px;
-  margin-top: -5px;
+  margin-top: -8px;
+  z-index: 10;
 }
 #about p{
   text-align: left;
@@ -662,8 +661,22 @@ h6{
   text-transform: none;
   font-weight: lighter;
   text-align: left;
+  z-index: 10;
 }
-
+#about-footer{
+  background-color: #007F76;
+}
+/*#about-image{
+  z-index: 1;
+  padding-left: 45%;
+  top: 0;
+  margin-top: -30%;
+  margin-bottom: -1%;
+  position: relative;
+}
+#about-image img{
+  width: 140%;
+}*/
 
 /* Contact pg DESKTOP*/
 
@@ -1155,7 +1168,12 @@ color: #932c1a;
 #about-intro{
   padding: 20px 30px 50px 30px;
   margin-top: -5px;}
-
+#about img {
+  width: 100%;
+}
+/*#about-image{
+  display: none;
+}*/
 }
 @media only screen and (min-device-width: 416px) and (max-device-width: 465px) {
 
@@ -1483,7 +1501,12 @@ color: #932c1a;
     padding-left: 4%;
     padding-right:4%;
   }
-
+  #about img {
+    width: 100%;
+  }
+  #about-image{
+    display: none;
+  }
 }
 
 
