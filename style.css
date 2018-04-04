@@ -1068,6 +1068,10 @@ color: #932c1a;
     padding-top: 20px;
     width: 96%;
   }
+  .portfolio .container p{
+
+  	display: none;
+  }
 	.portfolio img{
 		max-width: 100%;
 	}
@@ -1247,16 +1251,17 @@ color: #932c1a;
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 720px;
+		height: 520px;
 	}
 	#climbing h2{
 		font-size: 2em;
-    padding-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 0;
 	}
 	/* Making the quotes smaller and full width */
 	#climbing #quotes{
 		padding-top: 3%;
-		width: 100%;
+		width: 60%;
 		font-size: 1.3em;
 	}
 
@@ -1269,7 +1274,7 @@ color: #932c1a;
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 830px;
+		height: 730px;
     padding-top: 0;
 	}
 	#skiing h2{
@@ -1399,6 +1404,13 @@ color: #932c1a;
     padding-right: 0;
     margin: 0;
   }
+  .portfolio-end p {
+    padding-top: 60px;
+    font-weight: 100;
+}
+.portfolio-end {
+  height: 200px;
+}
   h6{
   padding-top: 5%;
   margin-bottom: 2%;
