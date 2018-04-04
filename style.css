@@ -651,7 +651,7 @@ h6{
       text-align: center;
 }
 #about-intro{
-  padding: 70px 100px 50px 100px;
+  padding: 45px 100px 50px 100px;
   margin-top: -5px;
 }
 #about p{
@@ -663,19 +663,7 @@ h6{
   font-weight: lighter;
   text-align: left;
 }
-.about-imgs img{
-  height: 350px;
-}
-.about-imgs{
-  height: 350px;
 
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-.about-imgs img{
-  padding-right: 10px;
-  float: left;
-}
 
 /* Contact pg DESKTOP*/
 
@@ -730,10 +718,9 @@ color: #932c1a;
 }
 #bad-page img{
   height: 60%;
-  float: right;
-  margin-top: -146px;
-  padding-top: 0;
-  padding-right: 8%;
+  right:5%;
+  position: fixed;
+  bottom: 0;
 }
 #fail-page-nav a{
   float: left;
@@ -1141,14 +1128,33 @@ color: #932c1a;
       transition-timing-function: ease-out;
       filter: alpha(opacity=50); /* For IE8 and earlier */
   }
-	/* MOBILE Contact Page Adjustments */
+/* MOBILE Contact Page Adjustments */
+/* MOBILE 404 Page Adjustments */
 
+  #bad-page h1{
+  font-size: 300%;
+  padding-top: 10%;
+  width: 70%;
+  }
+  #bad-page p{
+  padding-top: 37%;
+  z-index: 1;
+  font-size: 205%;
+  float: none;
+  margin-top: 145px;
+  }
+  #bad-page img{
+    height: 37%;
+    padding-left: 15%;
+    padding-top: 0;
+    margin-top: 0;
+    position: fixed;
+    bottom: 0;
+  }
 /* MOBILE About Page Adjustments */
 #about-intro{
   padding: 20px 30px 50px 30px;
   margin-top: -5px;}
-.about-imgs{
-  display: none;}
 
 }
 @media only screen and (min-device-width: 416px) and (max-device-width: 465px) {
@@ -1449,6 +1455,26 @@ color: #932c1a;
   margin-bottom: 2%;
   }
 	/*  TABLET Contact Page Adjustments */
+  /*  TABLET 404 Page Adjustments */
+
+  #bad-page h1{
+  font-size: 450%;
+  padding-top: 10%;
+  width: 70%;
+  }
+  #bad-page p{
+  padding-top: 37%;
+  z-index: 1;
+  font-size: 270%;
+  float: none;
+  margin-top: 43px;
+  }
+  #bad-page img{
+    height: 49%;
+    right: 5%;
+    position: fixed;
+    bottom: 0;
+  }
   /*  TABLET About Page Adjustments */
   #about-intro{
     padding: 10px 10px 50px 10px;
@@ -1457,9 +1483,7 @@ color: #932c1a;
     padding-left: 4%;
     padding-right:4%;
   }
-  .about-imgs{
-    display: none;
-  }
+
 }
 
 
