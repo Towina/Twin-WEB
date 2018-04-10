@@ -40,6 +40,7 @@ p{
 }
 #back-to-top img{
   float: right;
+  width:80%;
 }
 /* The alert message box */
 .alert {
@@ -1218,7 +1219,9 @@ color: #932c1a;
       display: block;
   }
 #back-to-top{
-  margin-top: 10%;
+  margin-top: 0;
+  float: right;
+  display: block;
 }
 /* not displaying on mobile or tablet???!!!! */
 
