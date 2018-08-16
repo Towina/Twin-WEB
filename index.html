@@ -9,6 +9,9 @@
 <script type="text/javascript" src="slick/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
 <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<meta name="description" content="The portfolio website of Ana Baranjin, a graphic designer, web designer, illustration, and surface/pattern designer"/>
+<meta name="keywords" content="Ana Baranjin, Baranjin, design, graphic design, graphic, illustration, freelancer, soloprenuer, web, website, webdesign, web design, icon, icon design, stickers, art, freelance, branding, UX"/>
+<meta name="author" content="Ana Baranjin"/>
 </head>
 
 <body>
@@ -62,7 +65,7 @@ I will get you squared away, <br>
 because that is what I do!<br>
 </h3>
 </div>
-<p id="colorstrip">For more work check out <a href="https://dribbble.com/Twin"target="_blank">dribbble</a> or <a href="https://www.behance.net/Ana_Twin"target="_blank">Behance</a>
+<p id="colorstrip"></p>
 </section>
 
 <section id="diving">
@@ -82,8 +85,8 @@ because that is what I do!<br>
 	<div class="container">
 	<h2>Climbing <span>these mountain tops</span></h2>
 
-	  </style>
 
+<!---
 	  <p id="quotes">"Working with Ana is such a fun process! I've worked with her on multiple projects and just by giving her a few ideas about what I wanted, she was able to create the perfect design."<br><br> -Grass Powered Poultry and Meats</p>
 	  <script type="text/javascript" id="quotes">
 	  var quote=new Array();
@@ -91,7 +94,7 @@ because that is what I do!<br>
 		quote[1]='"Ana\'s designs were clear, elegant and eye-catching from the first design she provided. Every feedback was perfectly taken care of, and she also had her own oppinions which she shared."<br><br> -YelloSpace';
 		quote[2]='"Ana\'s educational background in art and business makes her a one of a kind graphic designer who not only makes great designs, but at the same time has a customer in mind. I had a pretty demanding business logo design for Ana and she delivered an excellent work."<br><br> -Mind Central';
 		quote[3]='"Ana instantly picked up on the themestylefeel I wanted for my business. Every new creation was a surprise, yet perfectly melded with the rest. Even when I don\’t know what I\’m looking for, but I somehow need it the next day, she always seems to, not only find it, but also meet the impossible deadlines I often pose…even in a different time zone! When I explain to her exactly what I need, she follows through flawlessly with my requests."<br><br>	-Pocket of Sunshine Farms';
-	  var speed=9000;    /*this is the time in milliseconds adjust to suit*/
+	  var speed=10000;    /*this is the time in milliseconds adjust to suit*/
 	  var q=0;
 	  function showQuote() {
 
@@ -105,6 +108,75 @@ because that is what I do!<br>
 	  </script>
 
 	</div>
+  --->
+  <div class="slideshow-container">
+<!--    <a class="prev" onclick="plusSlides(-1)">❮</a>-->
+  <div class="mySlides">
+    <q>Working with Ana is such a fun process! I've worked with her on multiple projects and just by giving her a few ideas about what I wanted, she was able to create the perfect design.</q>
+    <p class="author">- Grass Powered Poultry and Meats</p>
+  </div>
+
+  <div class="mySlides">
+    <q>Ana took the time to figure me and my brand out and delivered better than I could have imagined! Will absolutely be working with her on new projects and wouldn't hesitate to recommend her to anyone! Really great designer with great communication.</q>
+    <p class="author">- Queens of Kush</p>
+  </div>
+
+  <div class="mySlides">
+    <q>Ana's designs were clear, elegant and eye-catching from the first design she provided. Every feedback was perfectly taken care of, and she also had her own oppinions which she shared.</q>
+    <p class="author">- YelloSpace</p>
+  </div>
+
+  <div class="mySlides">
+    <q>Ana's educational background in art and business makes her a one of a kind graphic designer who not only makes great designs, but at the same time has a customer in mind. I had a pretty demanding business logo design for Ana and she delivered an excellent work.</q>
+    <p class="author">- Mind Central</p>
+  </div>
+
+  <div class="mySlides">
+    <q>Ana instantly picked up on the themestylefeel I wanted for my business. Every new creation was a surprise, yet perfectly melded with the rest. Even when I don\’t know what I’m looking for, but I somehow need it the next day, she always seems to, not only find it, but also meet the impossible deadlines I often pose…even in a different time zone! When I explain to her exactly what I need, she follows through flawlessly with my requests.</q>
+    <p class="author">- Pocket of Sunshine Farms</p>
+  </div>
+
+
+<!--  <a class="next" onclick="plusSlides(1)">❯</a>-->
+
+  </div>
+
+<div class="dot-container">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
   </div>
 </section>
 
@@ -122,11 +194,7 @@ because that is what I do!<br>
 <div><img src="images/gallery-home/6.jpg"></div>
 </figure>
 </div>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
+
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -239,7 +307,26 @@ $(document).ready(function(){
 
 
 <footer>
-&copy;2017 Ana Baranjin. All rights reserved.
+  <a href="index.html" style="float:left;padding-left: 40px; padding-top: 4%;"><img src="images/twin-logo2.png" height="80"></img></a>
+
+
+
+  <div id="footer-social-icons" style="padding-top: 3%;">
+    <a href="https://www.linkedin.com/in/anabaranjin/"style="float:right;"><img src="images/social/linkedin.png"height="40"></img></a>
+    <a href="https://www.pinterest.com/twintowin/"style="float:right;"><img src="images/social/pinterest.png"height="40"></img></a>
+    <a href="https://behance.net/Ana_Twin"style="float:right;"><img src="images/social/behance.png"height="40"></img></a>
+    <a href="https://dribbble.com/Twin" style="float:right;"><img src="images/social/dribbble.png"height="40"></img></a>
+  </div>
+
+  <ul id="footer-nav">
+    <li><a name="top"href="portfolio.html"><b>PORTFOLIO</b></a></li>
+    <li><a href="about.html"><b>ABOUT</b></a></li>
+    <li><a href="contact.html"><b>CONTACT</b></a></li>
+  <li id="hire"><a href="mailto:ana.baranjin@gmail.com"><b>HIRE ME</b></a></li>
+  </ul>
+
+
+<p>&copy;2017 Ana Baranjin. All rights reserved.</p>
 </footer>
 
 </body>

@@ -279,12 +279,6 @@ padding-bottom: 4px;
     color: #025358;
 }
 
-#colorstrip a:hover{
-  color: #F9C82C;
-  transition: 0.3s;
-}
-#colorstrip a{
-  color: #3FBFB8;}
 
 #welcome-page p{
   padding-bottom: 140px;
@@ -371,7 +365,7 @@ padding-bottom: 4px;
   text-align: center;
 }
 #quotes {
-padding-top: 50px;
+padding-top: 0px;
   font-family: helvetica;
   color: white;
   margin-left: auto;
@@ -381,6 +375,76 @@ padding-top: 50px;
   width: 50%;
   font-weight: 100;
 }
+/* Slides */
+.slideshow-container{
+  width: 80%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.mySlides q{
+  color: white;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 300%;
+  width: auto;
+  padding: 16px;
+  color: #F9C82C;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px 0px 0px 3px;
+  user-select: none;
+  margin-left: -20%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 32%;
+  border-radius: 0px 3px 3px 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+      margin-top: -70px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #F9C82C;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.9s ease;
+}
+
+/* Add a background color to the active DOT CIRCLE */
+.active, .dot:hover {
+  background-color: #70c8b7;
+}
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
 
 /* HOME SKIING DESKTOP */
 #skiing{height: 750px;
@@ -416,7 +480,7 @@ div#slider figure {
 #cycle .work-process-mobile{
 	display: none;
 }
-#cycle{height: 400px;  background-color: #F8C72C; text-align: center;
+#cycle{height: 280px;  background-color: #F8C72C; text-align: center;
 }
 #cycle h2{
   padding-top: 30px;
@@ -457,8 +521,8 @@ div#slider figure {
 #belgrade{
   width: 24%;
   float: right;
-  padding-top: 70px;
-  margin-bottom: 420px;
+  padding-top: 50px;
+  margin-bottom: 300px;
 }
 .belgrade{
    animation: MoveUpDown 4s linear infinite;
@@ -506,7 +570,7 @@ div#slider figure {
           background-image: url(images/contact.png);
 }
 .mail{
-margin-top: 700px;
+margin-top: 555px;
 margin-right: 60px;
 float: right;
 animation: mymove 5s infinite;
@@ -525,13 +589,46 @@ position: relative;
 /* FOOTER DESKTOP*/
 
 footer{
-  padding: 15px;
-  color: white;
+  height: 200px;
+  background-color: #404048;
+
+}
+footer p{
+  margin-top: 60px;
+  color: #a8a8a8;
   text-align: center;
-  background-color: #7FB942;
   font-family: helvetica;
   font-weight: lighter;
+  margin-bottom: 30px;
+  line-height: 0;
+  font-size: 1em;
 }
+#footer-social-icons a{
+  padding-right: 10px;
+  padding-top: 3%;
+}
+#footer-social-icons{
+  padding-right: 50px;
+}
+#footer-nav{
+  padding-top: 2%;
+  text-align: center;
+}
+#footer-nav a{
+  text-decoration: none;
+  font-size: 16px;
+}
+#footer-nav ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#footer-nav li{
+  display: inline;
+  padding: 0 25px 0 25px;
+  font-family: helvetica;
+}
+
 
 .contact-info{
   height: 2200px;
