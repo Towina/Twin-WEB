@@ -331,6 +331,10 @@ padding-bottom: 4px;
   z-index: 2;
   float: left;
 }
+.fishes:hover{
+  transition: 0.5s;
+
+}
 #diving .fishes-mobile,
 #diving .bubbles-mobile,
 #diving .bubbles-tablet,
@@ -348,8 +352,9 @@ padding-bottom: 4px;
   background: -webkit-linear-gradient(top, #007f76 0%,#4768b1 100%);
   background: linear-gradient(to bottom, #007f76 0%,#4768b1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f76', endColorstr='#4768b1',GradientType=0 ); /* IE6-9 */
+  background-color: transparent;
+  background-color: none;
   background: url('images/climbing.png');
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,52 +382,29 @@ padding-top: 0px;
 }
 /* Slides */
 .slideshow-container{
-  width: 80%;
+  /* width: 80%; */
   text-align: center;
   padding: 0;
   margin: 0;
 }
 .mySlides {
   display: none;
-  padding: 80px;
+  padding-top: 80px;
   text-align: center;
+  line-height: 1.7;
+
 }
 .mySlides q{
   color: white;
 }
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 300%;
-  width: auto;
-  padding: 16px;
-  color: #F9C82C;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 3px 0px 0px 3px;
-  user-select: none;
-  margin-left: -20%;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 32%;
-  border-radius: 0px 3px 3px 0px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
+.mySlides:hover{
+  -webkit-animation-play-state: paused;
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
-      margin-top: -70px;
+      margin-top: 30px;
 }
 
 /* The dots/bullets/indicators */
@@ -431,10 +413,10 @@ padding-top: 0px;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #F9C82C;
+  background-color: #135357;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.9s ease;
+  transition: background-color 0.5s ease;
 }
 
 /* Add a background color to the active DOT CIRCLE */
@@ -442,7 +424,9 @@ padding-top: 0px;
   background-color: #70c8b7;
 }
 /* Add a blue color to the author */
-.author {color: cornflowerblue;}
+.author {color: #70c8b7;
+font-weight: bold;
+margin-top: 0;}
 
 
 
@@ -524,6 +508,9 @@ div#slider figure {
   padding-top: 50px;
   margin-bottom: 300px;
 }
+.belgrade-desktop{
+
+}
 .belgrade{
    animation: MoveUpDown 4s linear infinite;
    position: relative;}
@@ -531,6 +518,16 @@ div#slider figure {
     0% {bottom: 0;}
     50% {bottom: 17px;}
     100% {bottom: 0;}}
+.belgrade:hover{
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+  -webkit-transform: rotateZ(5deg);
+        -ms-transform: rotateZ(5deg);
+         transform: rotateZ(5deg);
+}
 .work-process{
   text-align: center;
   display: block;
