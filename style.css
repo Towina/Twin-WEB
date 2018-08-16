@@ -85,11 +85,12 @@ header{
   min-height: 60px;
 }
 header a {
-  color: white;
+  color: #70c8b7;
   text-decoration: none;
   font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
 
 header ul{
   margin: 0;
@@ -116,7 +117,7 @@ header nav{
   margin-top: 10px;
 }
 header a:hover {
-  color: #70c8b7;
+  color: #f8c72c;
   transition: 0.5s;
 }
 header a:active {
@@ -124,11 +125,10 @@ header a:active {
   transition: 0.5s;
 }
 .active-nav a{
-  color:  #70c8b7;
+  color:  #f9c82c;
+  border-bottom: 3px solid currentColor;
 }
-.active-nav a:hover{
-  color:  #f8c72c;
-}
+
 /* Mobile nav groundwork*/
 
 	nav ul {
@@ -560,8 +560,11 @@ div#slider figure {
   text-align: center;
   padding: 0;
   margin: 0;
-  line-height: 110%;
+  line-height: 1.4;
   color: #C2982E;
+  font-size: 14px;
+  font-weight: 600;
+
 }
 .mail:hover{
   -webkit-transform: scale(1.2);
@@ -610,6 +613,20 @@ footer p{
 #footer-social-icons{
   padding-right: 50px;
 }
+#footer-social-icons a:hover{
+  animation: bounce 1s;
+}
+@keyframes bounce {
+	   0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);}
+	   40% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);}
+	   80% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);}
+}
 #footer-nav{
   padding-top: 2%;
   text-align: center;
@@ -617,6 +634,10 @@ footer p{
 #footer-nav a{
   text-decoration: none;
   font-size: 16px;
+}
+#footer-nav a:hover{
+  color: white;
+  transition: 0.5s;
 }
 #footer-nav ul{
   margin: 0;
@@ -801,18 +822,6 @@ h6{
 
   text-align: center;
 }
-#contact-email{
-  font-family: helvetica;
-  font-size: 18px;
-  font-style: normal;
-  padding: 20px 0px 20px 0px;
-  font-size: 10px;
-  color: white;
-}
-#contact-email a{
-    color: #B7DEE2;
-}
-
 /* 404 pg DESKTOP */
 #bad-page{
 background: #ef4f23;
