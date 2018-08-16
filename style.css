@@ -636,7 +636,7 @@ footer p{
   font-size: 16px;
 }
 #footer-nav a:hover{
-  color: white;
+  color: #f9c82c;
   transition: 0.5s;
 }
 #footer-nav ul{
@@ -676,13 +676,9 @@ footer p{
 .portfolio-G{
   background-color: #f4f4f4/* #404048*/;
 }
-.portfolio-end{height: 400px;
-  background-color: #f4f4f4/* #E6E7E8*/;
+.portfolio-end{height: 100px;
 }
-.portfolio-end p{
-  padding-top: 120px;
-  font-weight: 100;
-}
+
 .portfolio p{
   color: #404048;
   font-size: 95%;
