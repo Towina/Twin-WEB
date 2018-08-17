@@ -298,7 +298,9 @@ padding-bottom: 4px;
   padding-bottom: 140px;
   background-color: #068078;
 }
-
+#hello-world-about a{
+  color:white;
+}
 /* HOME DIVING DESKTOP*/
 #diving{
   background: url('images/diving3.png');
@@ -373,6 +375,7 @@ padding-bottom: 4px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+  margin-top: -80px;
 }
 #climbing h2{
   padding-top: 80px;
@@ -1023,6 +1026,7 @@ color: #932c1a;
 		background: -webkit-linear-gradient(top, #068078 3%,#356fea 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom, #068078 3%,#356fea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		height: auto;
+    margin-top: 0px;
 	}
 	/* Needed a second div for the background images so we could have a gradient and the background separate */
 	#climbing .mobile-background{
@@ -1032,6 +1036,7 @@ color: #932c1a;
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 700px;
+    margin-top: 0px;
 	}
 	#climbing h2{
 		font-size: 3.5em;
@@ -1532,6 +1537,7 @@ footer img{
 		background: -webkit-linear-gradient(top, #068078 3%,#356fea 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom, #068078 3%,#356fea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		height: auto;
+    margin-top: 0px;
 
 	}
 	/* Needed a second div for the background images so we could have a gradient and the background separate */
