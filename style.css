@@ -8,7 +8,6 @@ background-color: #f4f4f4;
 }
 
 /* GLOBAL */
-
 .container{
   width: 80%;
   margin: auto;
@@ -19,6 +18,7 @@ background-color: #f4f4f4;
 a{
   text-decoration: none;
   color: #70c8b7;
+  cursor: pointer;
 }
 h2{
   padding-top: 30px;
@@ -127,7 +127,20 @@ header a:active {
 }
 .active-nav a{
   color:  #f9c82c;
-  border-bottom: 3px solid currentColor;
+  height: 3px;
+}
+header li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #f9c82c;
+    transition: width .3s;
+}
+
+header li:hover::after {
+    width: 100%;
+    //transition: width .3s;
 }
 
 /* Mobile nav groundwork*/
@@ -1022,15 +1035,15 @@ color: #932c1a;
 	}
 	#climbing h2{
 		font-size: 3.5em;
-		line-height: 1;
+		line-height: 0.5;
 		padding-bottom: 0;
-		padding-top: 0;
+		padding-top: 20px;
 		margin-top: 0;
 		color: #00616B;
     margin-bottom: 0;
 	}
 	#climbing h2 span{
-		font-size: .5em;
+		font-size: .3em;
 		width: 100%;
 		display: inline-block;
 	}
@@ -1041,7 +1054,19 @@ color: #932c1a;
 		font-size: 1em;
     width: 80%
 	}
-
+  #climbing br {
+    display: none;
+  }
+  .slideshow-container q{
+  text-align: center;
+  }
+  .mySlides{
+  margin-left:  10%;
+  padding-top: 2%;
+  width: 70%;}
+  .mySlides {
+  text-align: center;
+  }
 	/* MOBILE Ski Section */
 	/* Swapping out skiing background image with mobile image */
 	#skiing{
@@ -1213,6 +1238,43 @@ color: #932c1a;
 		animation: mymove 5s infinite;
 		position: relative;
 	}
+  /* MOBILE FOOTER */
+
+  footer{
+    height: 120px;
+    background-color: #404048;
+
+  }
+  footer p{
+    margin-top: 85px;
+    color: #a8a8a8;
+    text-align: center;
+    font-family: helvetica;
+    font-weight: lighter;
+    padding-bottom: 0px;
+    line-height: 0;
+    font-size: 0.8em;
+  }
+  footer img{
+    height: 50px;
+    padding-top: 10px;
+  }
+  #footer-social-icons a{
+
+    padding-top: 0.2%;
+  }
+  #footer-social-icons img{
+    height: 30px;
+  }
+  #footer-social-icons{
+    padding-right: 10px;
+  }
+  #footer-nav{
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 0;
+    display: none;
+  }
 	/* MOBILE Portfolio Page Adjustments */
 	.portfolio{
 		height: auto;
@@ -1381,6 +1443,45 @@ color: #932c1a;
 		position: absolute;
 		bottom: -90px;
 	}
+/* TABLET FOOTER */
+footer p{
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+footer img{
+  height: 50px;
+  padding-left: 0;
+  padding-top: 10%;
+}
+#footer-social-icons{
+  padding-right: 20px;
+}
+#footer-social-icons img{
+  height: 40px;
+}
+#footer-nav{
+  margin-top: 0;
+  text-align: center;
+}
+#footer-nav a{
+  text-decoration: none;
+  font-size: 15px;
+}
+#footer-nav a:hover{
+  color: #f9c82c;
+  transition: 0.5s;
+}
+#footer-nav ul{
+  margin: 0;
+  padding: 0;
+
+}
+#footer-nav li{
+  display: inline;
+  padding: 0 25px 0 25px;
+  font-family: helvetica;
+}
+
 
 	/*  TABLET Diving Section */
 	/* Swapping out for tablet background image */
@@ -1431,6 +1532,7 @@ color: #932c1a;
 		background: -webkit-linear-gradient(top, #068078 3%,#356fea 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom, #068078 3%,#356fea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		height: auto;
+
 	}
 	/* Needed a second div for the background images so we could have a gradient and the background separate */
 	#climbing .mobile-background{
@@ -1438,7 +1540,7 @@ color: #932c1a;
 		background-attachment: unset;
 		background-position: center bottom;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 		height: 520px;
 	}
 	#climbing h2{
@@ -1452,6 +1554,19 @@ color: #932c1a;
 		width: 60%;
 		font-size: 1.3em;
 	}
+  #climbing br {
+    display: none;
+}
+.slideshow-container q{
+  text-align: center;
+}
+.mySlides{
+margin-left:  10%;
+padding-top: 2%;
+width: 70%;}
+.mySlides {
+  text-align: center;
+}
 
 	/*  TABLET Ski Section */
 	/* Swapping out skiing background image with tablet image */
