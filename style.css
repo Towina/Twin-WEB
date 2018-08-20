@@ -41,6 +41,8 @@ p{
 #back-to-top img{
   float: right;
   width:80%;
+
+
 }
 .dot {
     height: 15px;
@@ -109,7 +111,7 @@ header #twinlogo{
   float: left;
 margin: 0;
 padding:0 0 0 20px;
-position: fixed;
+position: absolute;
 z-index: 99;
 }
 
@@ -1434,7 +1436,9 @@ color: #932c1a;
 /* =======================TABLET================================== */
 
 @media only screen and (min-device-width: 551px) and (max-device-width: 1024px) {
-
+  h1{
+    font-family: Futura;
+  }
 	header{
 		padding-top: 10px;
 		padding-bottom: 0;
@@ -1451,6 +1455,9 @@ color: #932c1a;
   display: block;
   position: relative;
   z-index: 1111;
+}
+header #twinlogo{
+position: absolute;
 }
 /* not displaying on mobile or tablet???!!!! */
 
