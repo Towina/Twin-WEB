@@ -594,8 +594,8 @@ div#slider figure {
           background-image: url(images/contact.png);
 }
 .mail{
-margin-top: 555px;
-margin-right: 60px;
+margin-top: 645px;
+margin-right: 40px;
 float: right;
 animation: mymove 5s infinite;
 position: relative;
@@ -618,13 +618,12 @@ footer{
 
 }
 footer p{
-  margin-top: 25px;
   color: #a8a8a8;
   text-align: center;
   font-family: helvetica;
   font-weight: lighter;
   padding-bottom: 0px;
-  line-height: 0;
+  line-height: 2em;
   font-size: 0.8em;
 }
 #footer-social-icons a{
@@ -651,6 +650,7 @@ footer p{
 #footer-nav{
   margin-top: 0;
   text-align: center;
+  margin-bottom: 0;
 }
 #footer-nav a{
   text-decoration: none;
@@ -664,13 +664,14 @@ footer p{
   margin: 0;
   padding: 0;
   text-align: center;
+
 }
 #footer-nav li{
   display: inline;
   padding: 0 25px 0 25px;
   font-family: helvetica;
-}
 
+}
 
 .contact-info{
   height: 2200px;
@@ -853,6 +854,10 @@ h6{
 }
 #client-logos a{
   height: 90px;
+}
+#client-logos img:hover{
+  opacity: 0.5;
+  transition: 0.5s;
 }
 #client-logos a img{
   height: 90px;
@@ -1803,7 +1808,7 @@ width: 70%;}
   	/** Pad the lightbox image */
   	max-width: 120%;
   	max-height: 120%;
-  	margin-top: 40%;
+  	margin-top: 35%;
     margin-left: 2.7%;
   }
 	/*  TABLET Contact Page Adjustments */
