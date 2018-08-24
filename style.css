@@ -251,7 +251,7 @@ header li:hover::after {
 #welcome-page{
   text-align: center;
   background-color: #f9c82c;
-  background: url('images/welcome2.png');
+  background: url('images/welcome.jpg');
   /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
@@ -265,7 +265,7 @@ margin-top: 110px;
 font-size: 5.6em;
 margin-bottom: 5px;
 text-align: center;
-font-family: Futura;
+font-family: Futura, Helvetica;
 
 }
 
@@ -305,7 +305,7 @@ padding-bottom: 4px;
 }
 /* HOME DIVING DESKTOP*/
 #diving{
-  background: url('images/diving3.png');
+  background: url('images/diving3.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -843,23 +843,22 @@ h6{
   text-align: left;
   z-index: 10;
 }
-#about-footer{
-  background-color: #007F76;
+.about-image img{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2%;
+  border: 0;
+  display: block;
+  margin: 0 auto;
 }
-/*#about-image{
-  z-index: 1;
-  padding-left: 45%;
-  top: 0;
-  margin-top: -30%;
-  margin-bottom: -1%;
-  position: relative;
+#client-logos a{
+  height: 90px;
 }
-#about-image img{
-  width: 140%;
-}*/
-
-/* Contact pg DESKTOP*/
-
+#client-logos a img{
+  height: 90px;
+  padding-right: 60px;
+  padding-top: 40px;
+}
 #contact{
   background-color: #116E7C;
 }
@@ -1000,6 +999,7 @@ color: #932c1a;
 	/* Swapping out for mobile background image */
 	#diving{
 		background-image: url(images/mobile/diving-mobile.png);
+    background: url(images/mobile/diving-mobile.png);
 		background-color: #068078;
 		background-attachment: fixed;
 		background-position: center;
@@ -1066,12 +1066,12 @@ color: #932c1a;
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 700px;
-    margin-top: 0px;
+    margin-top: -2px;
 	}
 	#climbing h2{
 		font-size: 3.5em;
 		line-height: 0.5;
-		padding-bottom: 0;
+		padding-bottom: 20px;
 		padding-top: 20px;
 		margin-top: 0;
 		color: #00616B;
@@ -1096,12 +1096,11 @@ color: #932c1a;
   text-align: center;
   }
   .mySlides{
-  margin-left:  10%;
+  margin-left:  14%;
   padding-top: 2%;
-  width: 70%;}
-  .mySlides {
-  text-align: center;
-  }
+  width: 70%;
+  text-align: center;}
+
 	/* MOBILE Ski Section */
 	/* Swapping out skiing background image with mobile image */
 	#skiing{
@@ -1187,14 +1186,14 @@ color: #932c1a;
 	/* MOBILE Styling the next and previous arrows */
 	.work-process-mobile .next{
 		position: absolute;
-		top: 27%;
+		top: 20%;
 		right: -25px;
 		font-size: 30px;
 		z-index: 111;
 	}
 	.work-process-mobile .prev{
 		position: absolute;
-		top: 27%;
+		top: 20%;
 		left: -25px;
 		font-size: 30px;
 		z-index: 111;
@@ -1263,7 +1262,7 @@ color: #932c1a;
 		margin-right: 0;
 		position: absolute;
 		bottom: 66px;
-		right: 135px;
+		right: 130px;
 		float: left;
 		display: block;
 		animation: unset;
@@ -1356,6 +1355,14 @@ color: #932c1a;
   .portfolio-end {
     height: 160px;
   }
+  .end-portfolio-other-pages{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 2%;
+
+  }
+
   .folio-overlay:hover {
       opacity: 0.5;
       transition: 1s;
@@ -1408,6 +1415,17 @@ color: #932c1a;
 #about img {
   width: 100%;
 }
+#client-logos img{
+  height: 20px;
+  width: inherit;
+  padding-left: 50px;
+}
+#client-logos {
+margin-bottom: -50px;
+text-align: center;
+}
+
+
 /*#about-image{
   display: none;
 }*/
@@ -1433,7 +1451,7 @@ color: #932c1a;
 }
 
 
-/* =======================TABLET================================== */
+/* ==================================================TABLET======================================================= */
 
 @media only screen and (min-device-width: 551px) and (max-device-width: 1024px) {
   h1{
@@ -1450,7 +1468,7 @@ color: #932c1a;
       display: block;
   }
 #back-to-top{
-  margin-top: 0;
+  margin-top: 130px;
   float: right;
   display: block;
   position: relative;
@@ -1458,6 +1476,10 @@ color: #932c1a;
 }
 header #twinlogo{
 position: absolute;
+}
+#twinlogo{
+  position: absolute;
+
 }
 /* not displaying on mobile or tablet???!!!! */
 
@@ -1502,8 +1524,8 @@ position: absolute;
 	}
 /* TABLET FOOTER */
 footer p{
-  margin-top: 20px;
-  padding-bottom: 0px;
+  margin-top: 15px;
+  padding-bottom: 10px;
 }
 footer img{
   height: 50px;
@@ -1519,6 +1541,8 @@ footer img{
 #footer-nav{
   margin-top: 0;
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 #footer-nav a{
   text-decoration: none;
@@ -1531,11 +1555,10 @@ footer img{
 #footer-nav ul{
   margin: 0;
   padding: 0;
-
 }
 #footer-nav li{
   display: inline;
-  padding: 0 25px 0 25px;
+  padding: 0 15px 0 15px;
   font-family: helvetica;
 }
 
@@ -1619,7 +1642,7 @@ footer img{
   text-align: center;
 }
 .mySlides{
-margin-left:  10%;
+margin-left:  16%;
 padding-top: 2%;
 width: 70%;}
 .mySlides {
@@ -1730,7 +1753,7 @@ width: 70%;}
 	/*  TABLET Bike Section */
 	/* Tablet Image */
 	#bike{
-		background-image: url(images/tablet/footer-tablet.png);
+		background-image: url(images/tablet/footer-tablet.jpg);
 		background-color: #fbcb2c;
 		background-size: contain;
 		background-position: 100% 100%;
@@ -1776,6 +1799,13 @@ width: 70%;}
   padding-top: 5%;
   margin-bottom: 2%;
   }
+  .lightbox img {
+  	/** Pad the lightbox image */
+  	max-width: 120%;
+  	max-height: 120%;
+  	margin-top: 40%;
+    margin-left: 2.7%;
+  }
 	/*  TABLET Contact Page Adjustments */
   /*  TABLET 404 Page Adjustments */
 
@@ -1811,7 +1841,14 @@ width: 70%;}
   #about-image{
     display: none;
   }
-}
+  #client-logos img{
+    height: 20px;
+    width: inherit;
+  }
+    #client-logos {
+          padding-left: 25px;
+    }
+
 
 
 @media only screen and (min-device-width: 850px) and (max-device-width: 1024px) {
