@@ -1,5 +1,5 @@
 body{
-font-family: Helvetica, 'Arial Black',sans-serif;
+font-family: Helvetica, 'Arimo',sans-serif;
 background-color: #f9c82c;
 line-height: 1.5;
 padding: 0;
@@ -8,7 +8,6 @@ background-color: #f4f4f4;
 }
 
 /* GLOBAL */
-
 .container{
   width: 80%;
   margin: auto;
@@ -19,20 +18,71 @@ background-color: #f4f4f4;
 a{
   text-decoration: none;
   color: #70c8b7;
+  cursor: pointer;
 }
 h2{
   padding-top: 30px;
   text-transform: uppercase;
   color: #52c2b6;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   font-size: 18px;
   padding-bottom: 30px;
   text-align: center;
 }
 p{
-  font-family: helvetica;
+    font-family: helvetica,'Arimo', sans-serif;
   font-size: 18px;
   text-align: center;
+}
+#back-to-top{
+  float: right;
+  margin-top: 33%;
+}
+#back-to-top img{
+  float: right;
+  width:80%;}
+
+  #back-to-top2{
+    float: right;
+    margin-top: -7%;}
+  #back-to-top2 img{
+      float: right;
+      width:80%;}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #3c3b41;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:  15px;
+}
+
+/* The alert message box */
+.alert {
+    padding: 32px;
+    background-color: #f44336;
+    opacity: 0.9;
+    z-index: 100;
+    color: white;
+    display: none;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
 }
 /* HEADER - NAV*/
 header{
@@ -43,11 +93,12 @@ header{
   min-height: 60px;
 }
 header a {
-  color: white;
+  color: #70c8b7;
   text-decoration: none;
   font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
 
 header ul{
   margin: 0;
@@ -58,14 +109,14 @@ header li {
   float: left;
   display: inline;
   padding: 0 25px 0 25px;
-  font-family: helvetica;
+    font-family: helvetica,'Arimo', sans-serif;
 }
 
 header #twinlogo{
   float: left;
 margin: 0;
 padding:0 0 0 20px;
-position: fixed;
+position: absolute;
 z-index: 99;
 }
 
@@ -74,12 +125,29 @@ header nav{
   margin-top: 10px;
 }
 header a:hover {
-  color: #70c8b7;
+  color: #f8c72c;
   transition: 0.5s;
 }
 header a:active {
   color: #70c8b7;
   transition: 0.5s;
+}
+.active-nav a{
+  color:  #f9c82c;
+  height: 3px;
+}
+header li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #f9c82c;
+    transition: width .3s;
+}
+
+header li:hover::after {
+    width: 100%;
+    //transition: width .3s;
 }
 
 /* Mobile nav groundwork*/
@@ -188,7 +256,7 @@ header a:active {
 #welcome-page{
   text-align: center;
   background-color: #f9c82c;
-  background: url('images/welcome2.png');
+  background: url('images/welcome.jpg');
   /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
@@ -202,12 +270,12 @@ margin-top: 110px;
 font-size: 5.6em;
 margin-bottom: 5px;
 text-align: center;
-font-family: Futura;
+font-family: 'Muli', sans-serif;
 
 }
 
 #welcome-page h3{
-font-family: 'helvetica';
+font-family: 'Arimo', sans-serif;
 line-height: 1.8;
 margin-top: -10px;
 padding-bottom: 100px;
@@ -232,21 +300,17 @@ padding-bottom: 4px;
     color: #025358;
 }
 
-#colorstrip a:hover{
-  color: #F9C82C;
-  transition: 0.3s;
-}
-#colorstrip a{
-  color: #3FBFB8;}
 
 #welcome-page p{
   padding-bottom: 140px;
   background-color: #068078;
 }
-
+#hello-world-about a{
+  color:white;
+}
 /* HOME DIVING DESKTOP*/
 #diving{
-  background: url('images/diving3.png');
+  background: url('images/diving3.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -264,7 +328,7 @@ padding-bottom: 4px;
   padding-top: 40px;
   text-transform: uppercase;
   color: #52c2b6;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   background-color: #068078;
   margin-top: 0px;
   height: 60px;
@@ -290,6 +354,10 @@ padding-bottom: 4px;
   z-index: 2;
   float: left;
 }
+.fishes:hover{
+  transition: 0.5s;
+
+}
 #diving .fishes-mobile,
 #diving .bubbles-mobile,
 #diving .bubbles-tablet,
@@ -307,25 +375,27 @@ padding-bottom: 4px;
   background: -webkit-linear-gradient(top, #007f76 0%,#4768b1 100%);
   background: linear-gradient(to bottom, #007f76 0%,#4768b1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f76', endColorstr='#4768b1',GradientType=0 ); /* IE6-9 */
-  background: url('images/mountains5.png');
-  background-attachment: fixed;
+  background-color: transparent;
+  background-color: none;
+  background: url('images/climbing.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+  margin-top: -80px;
 }
 #climbing h2{
   padding-top: 80px;
   text-transform: uppercase;
   color: #52c2b6;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   font-size: 18px;
   padding-bottom: 30px;
   text-align: center;
 }
 #quotes {
-padding-top: 50px;
-  font-family: helvetica;
+padding-top: 0px;
+  font-family: helvetica,'Arimo', sans-serif;
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -334,13 +404,67 @@ padding-top: 50px;
   width: 50%;
   font-weight: 100;
 }
+/* Slides */
+.slideshow-container{
+  /* width: 80%; */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+  padding-top: 80px;
+  text-align: center;
+  line-height: 1.7;
+
+}
+.mySlides q{
+  color: white;
+}
+.mySlides:hover{
+  -webkit-animation-play-state: paused;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+      margin-top: 30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #135357;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+/* Add a background color to the active DOT CIRCLE */
+.active, .dot:hover {
+  background-color: #70c8b7;
+}
+.dot:hover{
+  -webkit-transform: scale(1.2);
+	transform: scale(1.3);
+  transition: 0.5 ease;
+}
+/* Add a blue color to the author */
+.author {color: #70c8b7;
+font-weight: bold;
+margin-top: 0;}
+
+
 
 /* HOME SKIING DESKTOP */
 #skiing{height: 750px;
   background-color: white;
   padding-top: 20px;
-  background: url('images/ski.jpg');
-  background-attachment: fixed;
+  background: url('images/ski2.jpg');
+/*  background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -369,13 +493,13 @@ div#slider figure {
 #cycle .work-process-mobile{
 	display: none;
 }
-#cycle{height: 400px;  background-color: #F8C72C; text-align: center;
+#cycle{height: 280px;  background-color: #F8C72C; text-align: center;
 }
 #cycle h2{
   padding-top: 30px;
   text-transform: uppercase;
   color: white;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   font-size: 18px;
   padding-bottom: 30px;
 }
@@ -383,7 +507,7 @@ div#slider figure {
 	display: none !important;
 }
 #bike p{
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   text-transform: uppercase;
   color: white;
 }
@@ -403,15 +527,18 @@ div#slider figure {
   padding-top: 30px;
   text-transform: uppercase;
   color: white;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   font-size: 18px;
   padding-bottom: 30px;
 }
 #belgrade{
   width: 24%;
   float: right;
-  padding-top: 70px;
-  margin-bottom: 420px;
+  padding-top: 50px;
+  margin-bottom: 300px;
+}
+.belgrade-desktop{
+
 }
 .belgrade{
    animation: MoveUpDown 4s linear infinite;
@@ -420,6 +547,16 @@ div#slider figure {
     0% {bottom: 0;}
     50% {bottom: 17px;}
     100% {bottom: 0;}}
+.belgrade:hover{
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+  -webkit-transform: rotateZ(5deg);
+        -ms-transform: rotateZ(5deg);
+         transform: rotateZ(5deg);
+}
 .work-process{
   text-align: center;
   display: block;
@@ -430,7 +567,7 @@ div#slider figure {
   width: 16%;
   display: inline-block;
   padding: 0 2% 0 2%;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   text-align: center;
   float: left;
 }
@@ -449,8 +586,11 @@ div#slider figure {
   text-align: center;
   padding: 0;
   margin: 0;
-  line-height: 110%;
+  line-height: 1.4;
   color: #C2982E;
+  font-size: 14px;
+  font-weight: 600;
+
 }
 .mail:hover{
   -webkit-transform: scale(1.2);
@@ -459,8 +599,8 @@ div#slider figure {
           background-image: url(images/contact.png);
 }
 .mail{
-margin-top: 790px;
-margin-right: 60px;
+margin-top: 645px;
+margin-right: 40px;
 float: right;
 animation: mymove 5s infinite;
 position: relative;
@@ -478,12 +618,64 @@ position: relative;
 /* FOOTER DESKTOP*/
 
 footer{
-  padding: 15px;
-  color: white;
+  height: 120px;
+  background-color: #404048;
+
+}
+footer p{
+  color: #a8a8a8;
   text-align: center;
-  background-color: #7FB942;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   font-weight: lighter;
+  padding-bottom: 0px;
+  line-height: 2em;
+  font-size: 0.8em;
+}
+#footer-social-icons a{
+  padding-right: 10px;
+  padding-top: 0.2%;
+}
+#footer-social-icons{
+  padding-right: 50px;
+}
+#footer-social-icons a:hover{
+  animation: bounce 1s;
+}
+@keyframes bounce {
+	   0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);}
+	   40% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);}
+	   80% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);}
+}
+#footer-nav{
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+#footer-nav a{
+  text-decoration: none;
+  font-size: 16px;
+}
+#footer-nav a:hover{
+  color: #f9c82c;
+  transition: 0.5s;
+}
+#footer-nav ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+#footer-nav li{
+  display: inline;
+  padding: 0 25px 0 25px;
+  font-family: helvetica,'Arimo', sans-serif;
+
 }
 
 .contact-info{
@@ -511,13 +703,9 @@ footer{
 .portfolio-G{
   background-color: #f4f4f4/* #404048*/;
 }
-.portfolio-end{height: 400px;
-  background-color: #f4f4f4/* #E6E7E8*/;
+.portfolio-end{height: 100px;
 }
-.portfolio-end p{
-  padding-top: 120px;
-  font-weight: 100;
-}
+
 .portfolio p{
   color: #404048;
   font-size: 95%;
@@ -537,7 +725,6 @@ footer{
     transition-timing-function: ease-out;
     filter: alpha(opacity=50); /* For IE8 and earlier */
 }
-
 
 .portfolio-page-description{
   width: 100%;
@@ -572,20 +759,20 @@ h6{
   color: #9b9b9b;
   font-size: 95%;
   font-weight: lighter;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   margin-top: 7%;
   margin-bottom: 0;
   padding-bottom: 3%;
 }
 .portfolio-page-image-list img{
-  width: 90%;
+  width: 85%;
   text-align: center;
   padding-bottom: 2%;
   border: 0;
   display: block;
   margin: 0 auto;
 }
-.end-portfolio{
+.end-portfolio-other-pages{
   color: #9b9b9b;
   font-size: 95%;
   width: 50%;
@@ -596,15 +783,45 @@ h6{
   padding-top: 2%;
   margin:auto;
 }
-.end-portfolio a{
+.end-portfolio-other-pages a{
   color: #404048;
   padding-right: 18px;
   padding-left: 18px;
 }
-.end-portfolio a:hover{
+.end-portfolio-other-pages a:hover{
   color: #70c8b7;
   transition: 0.5s
 }
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 110%;
+	height: 110%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 120%;
+	max-height: 120%;
+	margin-top: 2%;
+  margin-left: 2.7%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+	/** Unhide lightbox **/
+	display: block;
+}
+.lightbox p{
+  display: none;}
 
 /* About pg DESKTOP */
 
@@ -612,42 +829,46 @@ h6{
   background-color: #E2E2E2;
 }
 
-#about-1{
-  padding: 60px 0 0 0;
-}
 #about-intro {
     background-color: white;
       text-align: center;
+      z-index: 10;
 }
 #about-intro{
-  padding: 70px 100px 50px 100px;
-  margin-top: -5px;
+  padding: 45px 100px 50px 100px;
+  margin-top: -8px;
+  z-index: 10;
 }
 #about p{
   text-align: left;
-  font-family: helvetica;
+  font-family: helvetica,'Arimo', sans-serif;
   color: #404048;
   font-size: 95%;
   text-transform: none;
   font-weight: lighter;
   text-align: left;
+  z-index: 10;
 }
-.about-imgs img{
-  height: 350px;
+.about-image img{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2%;
+  border: 0;
+  display: block;
+  margin: 0 auto;
 }
-.about-imgs{
-  height: 350px;
-
-  padding-top: 20px;
-  padding-bottom: 30px;
+#client-logos a{
+  height: 90px;
 }
-.about-imgs img{
-  padding-right: 10px;
-  float: left;
+#client-logos img:hover{
+  opacity: 0.5;
+  transition: 0.5s;
 }
-
-/* Contact pg DESKTOP*/
-
+#client-logos a img{
+  height: 90px;
+  padding-right: 60px;
+  padding-top: 40px;
+}
 #contact{
   background-color: #116E7C;
 }
@@ -656,17 +877,56 @@ h6{
 
   text-align: center;
 }
-#contact-email{
-  font-family: helvetica;
-  font-size: 18px;
-  font-style: normal;
-  padding: 20px 0px 20px 0px;
-  font-size: 10px;
+/* 404 pg DESKTOP */
+#bad-page{
+background: #ef4f23;
+height: 100%;
+}
+#bad-page h1{
+font-size: 390%;
+padding-top: 14%;
+padding-left: 10%;
+float: left;
+margin: 0;
+color: white;
+line-height: normal;
+}
+#bad-page p{
+font-size: 100%;
+padding-top: 28%;
+font-size: 160%;
+text-align: left;
+padding-left: 10%;
+margin: 0;
+color: #932c1a;
+}
+#bad-page a{
   color: white;
 }
-#contact-email a{
-    color: #B7DEE2;
+#bad-page a:hover{
+  color: black;
 }
+#bad-page img{
+  height: 60%;
+  right:5%;
+  position: fixed;
+  bottom: 0;
+}
+#fail-page-nav a{
+  float: left;
+  display: inline;
+  text-decoration: none;
+  padding-top: 0;
+  padding-right: 4%;
+  color: #932c1a;
+}
+#fail-page-nav p{
+  padding-top: 15%;
+  margin-top: 0;
+  font-size: 103%;
+}
+
+
 
 /* =====================================MOBILE==================================*/
 @media only screen and (max-device-width: 550px){
@@ -675,6 +935,10 @@ h6{
 		padding-top: 10px;
 		padding-bottom: 0;
 	}
+  .alert {
+      display: block;
+
+  }
   #twinlogo{
     position: relative !important;
   }
@@ -693,14 +957,13 @@ h6{
 		width: 100%;
 		padding: 15px 0;
 		background: #555558;
-		border-bottom: 3px solid #f9c82c;
+		border-bottom: 4px solid #555558;
 		text-align: center;
 	}
 	.open li a{
 		font-size: 22px;
-		font-weight: bold;
-    font-family: Helvetica;
-    font-weight: 400;
+		font-weight: bolder;
+    font-family: helvetica,'Arimo', sans-serif;
 	}
   .menu-toggle{
     margin-top: 7px;
@@ -746,6 +1009,7 @@ h6{
 	/* Swapping out for mobile background image */
 	#diving{
 		background-image: url(images/mobile/diving-mobile.png);
+    background: url(images/mobile/diving-mobile.png);
 		background-color: #068078;
 		background-attachment: fixed;
 		background-position: center;
@@ -802,6 +1066,7 @@ h6{
 		background: -webkit-linear-gradient(top, #068078 3%,#356fea 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom, #068078 3%,#356fea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		height: auto;
+    margin-top: 0px;
 	}
 	/* Needed a second div for the background images so we could have a gradient and the background separate */
 	#climbing .mobile-background{
@@ -811,17 +1076,19 @@ h6{
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 700px;
+    margin-top: -2px;
 	}
 	#climbing h2{
 		font-size: 3.5em;
-		line-height: 1;
-		padding-bottom: 0;
-		padding-top: 0;
+		line-height: 0.5;
+		padding-bottom: 20px;
+		padding-top: 20px;
 		margin-top: 0;
 		color: #00616B;
+    margin-bottom: 0;
 	}
 	#climbing h2 span{
-		font-size: .5em;
+		font-size: .3em;
 		width: 100%;
 		display: inline-block;
 	}
@@ -830,7 +1097,19 @@ h6{
 		padding-top: 0;
 		width: 100%;
 		font-size: 1em;
+    width: 80%
 	}
+  #climbing br {
+    display: none;
+  }
+  .slideshow-container q{
+  text-align: center;
+  }
+  .mySlides{
+  margin-left:  14%;
+  padding-top: 2%;
+  width: 70%;
+  text-align: center;}
 
 	/* MOBILE Ski Section */
 	/* Swapping out skiing background image with mobile image */
@@ -892,10 +1171,10 @@ h6{
 		width: 80%;
 		margin: 0 auto;
 		padding-bottom: 25px;
-		font-family: helvetica;
+	  font-family: helvetica,'Arimo', sans-serif;
 	}
 	.work-process-mobile img{
-		width: 90%;
+		width: 70%;
 		margin: 0 auto;
 	}
 	/* MOBILE Font size adjustments for the slider */
@@ -917,14 +1196,14 @@ h6{
 	/* MOBILE Styling the next and previous arrows */
 	.work-process-mobile .next{
 		position: absolute;
-		top: 27%;
+		top: 20%;
 		right: -25px;
 		font-size: 30px;
 		z-index: 111;
 	}
 	.work-process-mobile .prev{
 		position: absolute;
-		top: 27%;
+		top: 20%;
 		left: -25px;
 		font-size: 30px;
 		z-index: 111;
@@ -993,7 +1272,7 @@ h6{
 		margin-right: 0;
 		position: absolute;
 		bottom: 66px;
-		right: 135px;
+		right: 130px;
 		float: left;
 		display: block;
 		animation: unset;
@@ -1003,6 +1282,43 @@ h6{
 		animation: mymove 5s infinite;
 		position: relative;
 	}
+  /* MOBILE FOOTER */
+
+  footer{
+    height: 120px;
+    background-color: #404048;
+
+  }
+  footer p{
+    margin-top: 85px;
+    color: #a8a8a8;
+    text-align: center;
+    font-family: helvetica,'Arimo', sans-serif;
+    font-weight: lighter;
+    padding-bottom: 0px;
+    line-height: 0;
+    font-size: 0.8em;
+  }
+  footer img{
+    height: 50px;
+    padding-top: 10px;
+  }
+  #footer-social-icons a{
+
+    padding-top: 0.2%;
+  }
+  #footer-social-icons img{
+    height: 30px;
+  }
+  #footer-social-icons{
+    padding-right: 10px;
+  }
+  #footer-nav{
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 0;
+    display: none;
+  }
 	/* MOBILE Portfolio Page Adjustments */
 	.portfolio{
 		height: auto;
@@ -1010,6 +1326,12 @@ h6{
   .portfolio .container{
     padding-top: 20px;
     width: 96%;
+  }
+  .portfolio .container p{
+  	display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
   }
 	.portfolio img{
 		max-width: 100%;
@@ -1043,15 +1365,80 @@ h6{
   .portfolio-end {
     height: 160px;
   }
-	/* MOBILE Contact Page Adjustments */
+  .end-portfolio-other-pages{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 2%;
 
+  }
+
+  .folio-overlay:hover {
+      opacity: 0.5;
+      transition: 1s;
+      -webkit-transition: 1s; /* Safari */
+      transition-timing-function: ease-out;
+      filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+.lightbox p{
+  display: block !important;
+  text-align: center;
+  max-width: 90%;
+  font-size: 2em;
+  color: white;
+  line-height: normal;
+  position: fixed;
+  margin-top: 30%;
+  width: 80%;
+  margin-left: 5%;
+}
+  .lightbox img {
+  	display: none;
+  }
+/* MOBILE Contact Page Adjustments */
+/* MOBILE 404 Page Adjustments */
+
+  #bad-page h1{
+  font-size: 300%;
+  padding-top: 10%;
+  width: 70%;
+  }
+  #bad-page p{
+  padding-top: 37%;
+  z-index: 1;
+  font-size: 205%;
+  float: none;
+  margin-top: 145px;
+  }
+  #bad-page img{
+    height: 37%;
+    padding-left: 15%;
+    padding-top: 0;
+    margin-top: 0;
+    position: fixed;
+    bottom: 0;
+  }
 /* MOBILE About Page Adjustments */
 #about-intro{
   padding: 20px 30px 50px 30px;
   margin-top: -5px;}
-.about-imgs{
-  display: none;}
+#about img {
+  width: 100%;
+}
+#client-logos img{
+  height: 20px;
+  width: inherit;
+  padding-left: 50px;
+}
+#client-logos {
+margin-bottom: -50px;
+text-align: center;
+}
 
+
+/*#about-image{
+  display: none;
+}*/
 }
 @media only screen and (min-device-width: 416px) and (max-device-width: 465px) {
 
@@ -1074,10 +1461,12 @@ h6{
 }
 
 
-/* =======================TABLET================================== */
+/* ==================================================TABLET======================================================= */
 
 @media only screen and (min-device-width: 551px) and (max-device-width: 1024px) {
-
+  h1{
+    font-family: 'Muli';
+  }
 	header{
 		padding-top: 10px;
 		padding-bottom: 0;
@@ -1085,6 +1474,27 @@ h6{
 	header a{
 		font-size: 20px;
 	}
+  .alert {
+      display: block;
+  }
+#back-to-top{
+  margin-top: 130px;
+  float: right;
+  display: block;
+  position: relative;
+  z-index: 1111;
+}
+#back-to-top2{
+  display: none;
+}
+header #twinlogo{
+position: absolute;
+}
+#twinlogo{
+  position: absolute;
+
+}
+/* not displaying on mobile or tablet???!!!! */
 
 	/* TABLET Welcome Section */
 	/* Swapping out the tablet background image and settings it so it will size with the screen*/
@@ -1125,6 +1535,46 @@ h6{
 		position: absolute;
 		bottom: -90px;
 	}
+/* TABLET FOOTER */
+footer p{
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+footer img{
+  height: 50px;
+  padding-left: 0;
+  padding-top: 10%;
+}
+#footer-social-icons{
+  padding-right: 20px;
+}
+#footer-social-icons img{
+  height: 40px;
+}
+#footer-nav{
+  margin-top: 0;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+#footer-nav a{
+  text-decoration: none;
+  font-size: 15px;
+}
+#footer-nav a:hover{
+  color: #f9c82c;
+  transition: 0.5s;
+}
+#footer-nav ul{
+  margin: 0;
+  padding: 0;
+}
+#footer-nav li{
+  display: inline;
+  padding: 0 15px 0 15px;
+  font-family: helvetica,'Arimo', sans-serif;
+}
+
 
 	/*  TABLET Diving Section */
 	/* Swapping out for tablet background image */
@@ -1135,7 +1585,7 @@ h6{
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 640px;
+		height: 670px;
 		margin-bottom: -1px;
 	}
 	#diving h2{
@@ -1175,6 +1625,8 @@ h6{
 		background: -webkit-linear-gradient(top, #068078 3%,#356fea 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom, #068078 3%,#356fea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		height: auto;
+    margin-top: 0px;
+
 	}
 	/* Needed a second div for the background images so we could have a gradient and the background separate */
 	#climbing .mobile-background{
@@ -1182,18 +1634,33 @@ h6{
 		background-attachment: unset;
 		background-position: center bottom;
 		background-repeat: no-repeat;
-		background-size: contain;
-		height: 720px;
+		background-size: cover;
+		height: 520px;
 	}
 	#climbing h2{
 		font-size: 2em;
+    padding-top: 1%;
+    padding-bottom: 0;
 	}
 	/* Making the quotes smaller and full width */
 	#climbing #quotes{
 		padding-top: 3%;
-		width: 100%;
+		width: 60%;
 		font-size: 1.3em;
 	}
+  #climbing br {
+    display: none;
+}
+.slideshow-container q{
+  text-align: center;
+}
+.mySlides{
+margin-left:  16%;
+padding-top: 2%;
+width: 70%;}
+.mySlides {
+  text-align: center;
+}
 
 	/*  TABLET Ski Section */
 	/* Swapping out skiing background image with tablet image */
@@ -1204,7 +1671,7 @@ h6{
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 830px;
+		height: 730px;
     padding-top: 0;
 	}
 	#skiing h2{
@@ -1237,7 +1704,7 @@ h6{
 		width: 40%;
 		margin: 0 auto;
 		padding-bottom: 25px;
-		font-family: helvetica;
+	  font-family: helvetica,'Arimo', sans-serif;
 	}
 	.work-process-mobile img{
 		width: 90%;
@@ -1266,7 +1733,7 @@ h6{
 	.work-process-mobile .next{
 		position: absolute;
 		top: 24%;
-		right: -65px;
+		right: -85px;
 		font-size: 30px;
 		z-index: 111;
 		background-image: url(images/tablet/arrow-r-tablet.png);
@@ -1277,7 +1744,7 @@ h6{
 	.work-process-mobile .prev{
 		position: absolute;
 		top: 24%;
-		left: -65px;
+		left: -85px;
 		font-size: 30px;
 		z-index: 111;
 		background-image: url(images/tablet/arrow-l-tablet.png);
@@ -1299,7 +1766,7 @@ h6{
 	/*  TABLET Bike Section */
 	/* Tablet Image */
 	#bike{
-		background-image: url(images/tablet/footer-tablet.png);
+		background-image: url(images/tablet/footer-tablet.jpg);
 		background-color: #fbcb2c;
 		background-size: contain;
 		background-position: 100% 100%;
@@ -1334,11 +1801,45 @@ h6{
     padding-right: 0;
     margin: 0;
   }
+  .portfolio-end p {
+    padding-top: 60px;
+    font-weight: 100;
+}
+.portfolio-end {
+  height: 200px;
+}
   h6{
   padding-top: 5%;
   margin-bottom: 2%;
   }
+  .lightbox img {
+  	/** Pad the lightbox image */
+  	max-width: 120%;
+  	max-height: 120%;
+  	margin-top: 35%;
+    margin-left: 2.7%;
+  }
 	/*  TABLET Contact Page Adjustments */
+  /*  TABLET 404 Page Adjustments */
+
+  #bad-page h1{
+  font-size: 450%;
+  padding-top: 10%;
+  width: 70%;
+  }
+  #bad-page p{
+  padding-top: 37%;
+  z-index: 1;
+  font-size: 270%;
+  float: none;
+  margin-top: 43px;
+  }
+  #bad-page img{
+    height: 49%;
+    right: 5%;
+    position: fixed;
+    bottom: 0;
+  }
   /*  TABLET About Page Adjustments */
   #about-intro{
     padding: 10px 10px 50px 10px;
@@ -1347,10 +1848,20 @@ h6{
     padding-left: 4%;
     padding-right:4%;
   }
-  .about-imgs{
+  #about img {
+    width: 100%;
+  }
+  #about-image{
     display: none;
   }
-}
+  #client-logos img{
+    height: 20px;
+    width: inherit;
+  }
+    #client-logos {
+          padding-left: 25px;
+    }
+
 
 
 @media only screen and (min-device-width: 850px) and (max-device-width: 1024px) {
