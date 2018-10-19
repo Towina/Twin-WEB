@@ -718,6 +718,9 @@ footer p{
 .portfolio img{
   width: 90%;
 }
+
+#folio-gif{width:68%;}
+
 .folio-overlay:hover {
     opacity: 0.5;
     transition: 1s;
